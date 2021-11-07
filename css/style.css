@@ -1,0 +1,43 @@
+body {
+  background-color: rgba(3, 136, 3, 0.719);
+  font-family: helvetica;
+  font-size: 20px;
+  color: orange;
+}
+
+.container {
+  width: 650px;
+}
+
+h1 {
+  /*!global will apply style to next*/
+  color: beige;
+}
+
+p {
+  color: beige;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: beige;
+  background-color: rgba(3, 136, 3, 0.719);
+}

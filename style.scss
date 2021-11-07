@@ -1,0 +1,43 @@
+$ronFont: helvetica;
+$ronFontSize: 20px;
+$ronColor:orange;
+$ronBgColor: rgba(3, 136, 3, 0.719);
+$ronWidth: 650px;
+
+body {
+    background-color: $ronBgColor;
+    font-family: $ronFont ;
+    font-size: $ronFontSize;
+    color: $ronColor;
+}
+.container {
+    width: $ronWidth;
+}
+h1 {
+    $ronColor: beige !global; /*!global will apply style to next*/
+    color: $ronColor;
+}
+p {
+    color: $ronColor;
+}
+nav {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        justify-content: center;
+    }
+    li {
+        display: inline-block;
+    }
+    a {
+        display: block;
+        padding: 6px 12px;
+        text-decoration: none;
+        &:hover {
+            color: $ronColor;
+            background-color: $ronBgColor;
+        }
+    }
+    }
+   
